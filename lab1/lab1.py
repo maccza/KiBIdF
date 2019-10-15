@@ -23,7 +23,7 @@ while (True):
 			entropy.append(int(x))
 	entropy_avile.close()
 	#with ("
-	time.sleep(4)
+	time.sleep(time_)
 	print(x)
 	entropy.pop()
 	
