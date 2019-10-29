@@ -1,6 +1,7 @@
 <data>
     <items>
-        <time>4</time>
-        <file_name>time_4.txt</file_name>
+        <time>3</time>
+        <file_name>time_3.csv</file_name>
+        <time_collecting>1008000</time_collecting>
     </items>
 </data>
