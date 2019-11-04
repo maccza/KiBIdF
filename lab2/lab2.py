@@ -1,3 +1,4 @@
+import random
 class LCG:
     def __init__(self,seed):
         self.seed = seed
@@ -10,6 +11,12 @@ class LCG:
         self.last_results = pseudo_random_number
         return pseudo_random_number
 if __name__ == "__main__":
-    lcg = LCG(321342345434213235325324125436754645645645645645654)
-    for i in range(100):
-        print(lcg.lcg(345,67745655464553523543465375465464))
+    seed = random.getrandbits(4096)
+    lcg = LCG(seed)
+    mod_gen = random.getrandbits(4096)
+    file_to_save = open("krypto.txt","w+")
+    for i in range(10):
+        file_to_save.write(str(lcg.lcg(345,mod_gen)))
+        file_to_save.write("\n")
+    file_to_save.close()
+        
