@@ -1,6 +1,6 @@
 <data>
     <domeny>
-            <domena id="www.google.pl"></domena>
+            <domena id="www.sinoptik.pl"></domena>
             <domena id="www.fizyka.pw.edu.pl"></domena>
             <domena id="www.w3schools.com"></domena>
             <domena id="www.stackoverflow.com"></domena>
@@ -10,5 +10,15 @@
             <domena id="www.pkobp.pl"></domena>
             <domena id="www.gov.pl"></domena>
             <domena id="www.mon.gov.ua"></domena>
+            <domena id="www.github.com"></domena>
+            <domena id="www.nawa.gov.pl"></domena>
+            <domena id="www.wp.pl"></domena>
+            <domena id="www.onet.pl"></domena>
+            <domena id="www.kwejk.pl"></domena>
+            <domena id="www.udemy.com"></domena>
+            <domena id="www.youtube.com"></domena>
+            <domena id="www.google.com"></domena>
+            <domena id="www.facebook.com"></domena>
+            <domena id="www.yandex.ru"></domena>
     </domeny>
 </data>

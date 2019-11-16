@@ -25,15 +25,19 @@ def upload_public_key():
     return keys
 
 
-def moooeeeep(seq):
+def check_the_same(seq):
     seen = set()
     seen_add = seen.add
-    # adds all elements it doesn't know yet to seen and all other to seen_twice
     seen_twice = set(x for x in seq if x in seen or seen_add(x))
-    # turn the set into a list (as requested)
+    out = list(seen_twice)
     return list(seen_twice)
 
 
 if __name__ == '__main__':
     out = upload_public_key()
-    print(moooeeeep(out))
+    same = check_the_same(out)
+    if len(same) == 0:
+        print("\nBrak duplikatow wsrod pobranych kluczy.")
+    else:
+        print("\nTe klucze publiczne sa zduplikowane:\n")
+        print(same)
