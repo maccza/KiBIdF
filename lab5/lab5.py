@@ -4,6 +4,7 @@ from fastecdsa import keys
 from fastecdsa import curve as c
 from xml.dom import minidom
 from fastecdsa import encoding as enc
+
 def parseXML(imput_patch):
     eliptic_curve = namedtuple("eliptic_curve",["name","p","a","b","q","gx","gy"])
     
@@ -46,4 +47,3 @@ if __name__ == "__main__":
     parametres = parseXML("parameters.xml")
     curve = create_curve(parametres)
     keys = generate_keys(curve)
-    
