@@ -6,7 +6,7 @@ from xml.dom import minidom
 from fastecdsa import encoding as enc
 
 def parseXML(imput_patch):
-    eliptic_curve = namedtuple("eliptic_curve",["name","p","a","b","q","gx","gy"])
+    eliptic_curve = namedtuple("eliptic_curve", ["name","p","a","b","q","gx","gy"])
     
     xmldoc = minidom.parse(imput_patch)
     
@@ -39,10 +39,12 @@ def create_curve(parameters):
                     parametres.gy)
     return curve
 def generate_keys(curve):
-    ecdsa_keys = namedtuple("ecdsa_keys",["public_key","private_key"])
+    ecdsa_keys = namedtuple("ecdsa_keys", ["public_key", "private_key"])
     priv_key,pub_key = keys.gen_keypair(curve)
 
     return ecdsa_keys(pub_key,priv_key)
+
+
 if __name__ == "__main__":
     parametres = parseXML("parameters.xml")
     curve = create_curve(parametres)

@@ -56,5 +56,6 @@ class ElipticCryptogtaphy:
 if __name__ == '__main__':
     t = ElipticCryptogtaphy()
     t.create_private_kay()
-    sig_ = ElipticCryptogtaphy.signature(t,b"this is some data I'd like to sign")
+    sig_ = ElipticCryptogtaphy.signature(t, b"this is some data I'd like to sign")
     print(t.public_key)
+    print(sig_)
